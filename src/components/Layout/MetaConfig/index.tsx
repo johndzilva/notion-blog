@@ -17,7 +17,7 @@ const MetaConfig: React.FC<MetaConfigProps> = ({ ...props }) => {
 
   return (
     <Head>
-      <title>{meta.title} - {CONFIG.blog.title} 블로그</title>
+      <title>{CONFIG.blog.title} - Blog</title>
       <meta name="robots" content="follow, index" />
       <meta charSet="UTF-8" />
       {CONFIG.seo.keywords && (

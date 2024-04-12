@@ -1,21 +1,24 @@
-import { TPosts, TPostPublic, TPostType } from "@/src/types"
+import { TPosts, TPostStatus, TPostType } from "src/types"
 
-type Options = {
+export type FilterPostsOptions = {
+  acceptStatus?: TPostStatus[]
   acceptType?: TPostType[]
-  publicType?: TPostPublic
 }
 
-const initialOption: Options = {
+const initialOption: FilterPostsOptions = {
+  acceptStatus: ["Public"],
   acceptType: ["Post"],
-  publicType: "Yes"
 }
 const current = new Date()
 const tomorrow = new Date(current)
 tomorrow.setDate(tomorrow.getDate() + 1)
 tomorrow.setHours(0, 0, 0, 0)
 
-export function filterPosts(posts: TPosts, options: Options = initialOption) {
-  const { acceptType = ["Post"], publicType} = options
+export function filterPosts(
+  posts: TPosts,
+  options: FilterPostsOptions = initialOption
+) {
+  const { acceptStatus = ["Public"], acceptType = ["Post"] } = options
   const filteredPosts = posts
     // filter data
     .filter((post) => {
@@ -23,9 +26,10 @@ export function filterPosts(posts: TPosts, options: Options = initialOption) {
       if (!post.title || !post.slug || postDate > tomorrow) return false
       return true
     })
-    //filter public checkbox
-    .filter(post => {
-      return post?.public === publicType
+    // filter status
+    .filter((post) => {
+      const postStatus = post.status[0]
+      return acceptStatus.includes(postStatus)
     })
     // filter type
     .filter((post) => {

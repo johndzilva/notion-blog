@@ -31,7 +31,6 @@ type Props = {
 }
 
 const FeedPage: NextPageWithLayout<Props> = ({ tags, posts }) => {
-  
   return <Feed tags={tags} posts={posts} />
 }
 

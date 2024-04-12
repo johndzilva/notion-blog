@@ -29,13 +29,13 @@ const MobileProfileCard: React.FC<Props> = () => {
             className="relative"
           />
           <div className="h-fit dark:text-white">
-            <div className=" text-xl  italic font-bold">
+            <div className=" text-xl font-bold">
               {CONFIG.profile.name}
             </div>
             <div className="text-sm text-gray-500 mb-2 dark:text-gray-400">
               {CONFIG.profile.role}
             </div>
-            <div className="text-sm">{CONFIG.profile.bio}</div>
+            <div className="text-sm text-center">{CONFIG.profile.bio}</div>
           </div>
         </div>
         {/* <div className="flex">

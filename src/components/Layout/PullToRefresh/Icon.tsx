@@ -10,7 +10,7 @@ const Pull: React.FC<Props> = () => {
   return (
     <div className="text-center dark:text-white m-auto pb-4 text-gray-500 dark:text-gray-400">
       <FaRegArrowAltCircleDown className="inline-block text-2xl"/>
-      <h3>아래로 당겨서 새로고침</h3>
+      <h3>Pull down to refresh</h3>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "HARRIS91",
+    name: "John Dzilva",
     image: "/emoji/profile.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
 
     //Random Image set
@@ -10,36 +10,35 @@ const CONFIG = {
     ext: ".png",
     maxNum: 6,
 
-    role: "Full-Stack Developer",
-    bio: "I'm fairly curious person.",
-    email: "harris91@kakao.com",
-    linkedin: "",
-    github: "harris91",
+    role: "Engineer",
+    bio: `Technology captivates my heart with its endless possibilities!`,
+    email: "john@gmail.com",
+    linkedin: "johndiesilva",
+    github: "johndzilva",
     instagram: "",
   },
   projects: [
     {
-      name: `harris-blog`,
-      href: "https://github.com/harris91/harris-blog",
+      name: `projects`,
+      href: "https://github.com/johndzilva",
     },
   ],
   // blog setting (required)
   blog: {
-    title: "HARRIS91",
-    description: "welcome to harris-log!",
-
+    title: "John Dz",
+    description: "Welcome to John's Repo!",
     //테마
     theme: "auto", // ['light', 'dark', 'auto']
     themeToggle: true,
     themeColor: {
       dark: "#121826",
-      light: "#fff"
+      light: "#fff",
     },
   },
 
   // CONFIG configration (required)
-  link: "https://harris91.vercel.app",
-  since: 2022, // If leave this empty, current year will be used.
+  link: "https://johndz.vercel.app",
+  since: 2023, // If leave this empty, current year will be used.
   lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR'] // 날짜 포맷 형식 적용
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
   seo: {

@@ -41,8 +41,7 @@ const Logo: React.FC<Props> = () => {
               />
             </div>
           <div className="ml-1 dark:text-white text-xl font-bold">
-            {CONFIG.blog.title}&nbsp;
-            <span className="invisible sm:visible text-sm font-normal">블로그</span>
+            {CONFIG.blog.title}
           </div>
         </div>
         </Transition>

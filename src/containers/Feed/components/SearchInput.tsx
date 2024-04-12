@@ -17,7 +17,7 @@ const SearchInput: React.FC<Props> = ({ ...props }) => {
             dark:focus:bg-gray-600 dark:focus:text-gray-200
             outline-none pl-10"
           type="text"
-          placeholder="검색"
+          placeholder="Search"
           {...props}
         />
       </div>
