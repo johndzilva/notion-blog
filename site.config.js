@@ -72,7 +72,7 @@ const CONFIG = {
   utterances: {
     enable: true,
     config: {
-      repo: "harris91/harris-blog",
+      repo: "johndzilva/notion-blog",
       "issue-term": "og:title",
       label: "💬 Utterances",
     },

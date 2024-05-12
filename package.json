@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/harris91/harris-log.git"
+    "url": "https://github.com/johndzilva/notion-blog.git"
   },
   "scripts": {
     "dev": "next dev",

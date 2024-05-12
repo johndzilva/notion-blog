@@ -7,11 +7,10 @@ type Props = {
 }
 
 const getProfileImage = () => {
-  if(CONFIG.profile.isRandom) {
-    const random = Math.ceil(Math.random()*CONFIG.profile.maxNum)
+  if (CONFIG.profile.isRandom) {
+    const random = Math.ceil(Math.random() * CONFIG.profile.maxNum)
     return CONFIG.profile.randomImage + random + CONFIG.profile.ext
-  } 
-  else {
+  } else {
     return CONFIG.profile.image
   }
 }
@@ -23,19 +22,17 @@ const MobileProfileCard: React.FC<Props> = () => {
         <div className="flex items-center gap-2">
           <Image
             src={getProfileImage()}
-            width={90}
-            height={90}
+            width={140}
+            height={140}
             alt="profile_image"
             className="relative"
           />
           <div className="h-fit dark:text-white">
-            <div className=" text-xl font-bold">
-              {CONFIG.profile.name}
-            </div>
+            <div className=" text-xl font-bold">{CONFIG.profile.name}</div>
             <div className="text-sm text-gray-500 mb-2 dark:text-gray-400">
               {CONFIG.profile.role}
             </div>
-            <div className="text-sm text-center">{CONFIG.profile.bio}</div>
+            <div className="text-sm text-left">{CONFIG.profile.bio}</div>
           </div>
         </div>
         {/* <div className="flex">

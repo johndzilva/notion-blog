@@ -6,20 +6,16 @@ class MyDocument extends Document {
     return (
       <Html lang={CONFIG.lang}>
         <Head>
-
           {/* pretendard 폰트 적용 */}
-          <link 
-            rel="stylesheet" 
-            as="style" 
-            crossOrigin="true" 
-            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css" />
-
-          <link rel="icon" href="/favicon.ico" />
           <link
-            rel="profile-icon"
-            sizes="192x192"
-            href="/profile.png"
-          ></link>
+            rel="stylesheet"
+            as="style"
+            crossOrigin="true"
+            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css"
+          />
+
+          <link rel="icon" href="/favicon.png" />
+          <link rel="profile-icon" sizes="192x192" href="/profile.png"></link>
           <link
             rel="alternate"
             type="application/rss+xml"
@@ -50,18 +46,18 @@ class MyDocument extends Document {
 
           {/* Google Adsense */}
           {CONFIG.googleAdsense.enable === true && (
-            <script async 
-            src={
-              "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client="
-              + CONFIG.googleAdsense.config.client
-            }
-            crossOrigin="anonymous">
-            </script>
+            <script
+              async
+              src={
+                "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" +
+                CONFIG.googleAdsense.config.client
+              }
+              crossOrigin="anonymous"
+            ></script>
           )}
 
           {/* PWA 준비 */}
-          <link rel="manifest" href="./manifest.json"/>
-          
+          <link rel="manifest" href="./manifest.json" />
         </Head>
         <body className="bg-day dark:bg-night">
           <Main />

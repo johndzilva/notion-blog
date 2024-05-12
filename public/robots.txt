@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://harris91.vercel.app
+Host: https://johndzblog.vercel.app
 
 # Sitemaps
-Sitemap: https://harris91.vercel.app/sitemap.xml
+Sitemap: https://johndzblog.vercel.app/sitemap.xml
